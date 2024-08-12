@@ -1,0 +1,199 @@
+@mixin text-style($font-size, $font-family, $line-height: 100%, $letter-spacing: 0px, $font-weight: normal) {
+    font-size: $font-size;
+    font-family: $font-family;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    font-weight: $font-weight;
+  }
+  
+
+$rose-800: #7A284E;
+$rose-50: #FFF7FB;
+$stone-900: #312E2C;
+$stone-600: #5F564D;
+$stone-150: #E3DDD7;
+$stone-100: #F3E5D7;
+$brown-800: #854632;
+$white: #fff;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+
+
+h1{
+    @include text-style(3.6rem, "Young Serif", 100%, 0px, 500);
+    color: $stone-900;
+    margin-bottom: 2.4rem;
+    @media screen and (min-width: 768px){
+        @include text-style(4rem, "Young Serif", 100%, 0px, 500);
+    }
+}
+
+p{
+    @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+    color: $stone-600;
+}
+
+ul, ol {
+    li {
+        @include text-style(1.6rem, "Young Serif", 150%, 0, regular);
+        color: $stone-600;
+        margin-bottom: .8rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .bold-text {
+        font-weight: bold;
+    }
+}
+
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-color: $stone-100;
+    @media screen and (min-width: 768px){
+        padding-top: 12.8rem;
+        padding-bottom: 12.8rem;
+    }
+    
+    main{
+        background-color: $white;
+        border-radius: 2.4rem;
+        max-width: 100%;
+        @media screen and (min-width: 768px){
+            max-width: 61.6rem;
+            padding: 4rem;
+        }
+        @media screen and (min-width: 1200px){
+            max-width: 73.6rem;
+        }
+        img{
+            max-width: 100%;
+            @media screen and (min-width: 768px){
+                border-radius: 1.2rem;
+                margin-bottom: 0;
+            }
+        }
+        .content-wrapper{
+            padding-left: 3.2rem;
+            padding-right: 3.2rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            @media screen and (min-width: 768px){
+                padding-left: 0;
+                padding-right: 0;
+                margin-bottom: 0;
+            }
+            h2{
+                @include text-style(2.8rem, "Young Serif", 150%, 0, bold);
+                color: $brown-800;
+                margin-bottom: 2.4rem;
+                margin-top: 3.2rem;
+            }
+            p {
+                &:first-of-type {
+                    margin-bottom: 3.2rem;
+                    color: $stone-600;
+                }
+                
+                &:last-of-type {
+                    margin-bottom: 2.4rem;
+                    color: $stone-600;
+                }
+            }
+            .container-recipe{
+                background-color: $rose-50;
+                padding: 2.4rem;
+                border-radius: 1.2rem;
+                h2{
+                    @include text-style(2.8rem, "Outfit", 150%, 0, bold);
+                    font-size: 2rem;
+                    margin-top: 0;
+                    margin-bottom: 1.6rem;
+                    line-height: 100%;
+                    color: $rose-800;
+                }
+                ul{
+                    margin: 0;
+                    padding-left: 2rem;
+                    li{
+                        @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+                        color: $stone-600;
+                    }
+                    .bold-text{
+                        font-weight: bold;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            ul, ol{
+                margin: 0;
+                margin-bottom: 6.4rem;
+                padding-left: 3rem;
+                li{
+                    @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+                    color: $stone-600;
+                }
+            }
+            .grid-nutrition {
+                .container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; // Ambas columnas ocupan el mismo espacio
+                    border-bottom: 1px solid $stone-150;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+            
+                    &:last-child {
+                        border-bottom: none;
+                    }
+    
+                    p{
+                        margin-bottom: 2.4rem;
+                    }
+            
+                    span {
+                        @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+                        align-self: center; // Alinea verticalmente en el centro
+                        justify-self: start; // Alinea horizontalmente a la izquierda
+                        color: $stone-600;
+                        padding-left: 3rem;
+                        @media screen and (min-width: 768px){
+                            padding-left: 6rem;
+                        }
+                    }
+            
+                    .quantity {
+                        @include text-style(1.6rem, "Outfit", 150%, 0, bold);
+                        justify-self: start; // Centra horizontalmente el contenido
+                        align-self: center; // Alinea verticalmente en el centro
+                        color: $brown-800;
+                        padding-left: 3rem;
+                        @media screen and (min-width: 768px){
+                            padding-left: 6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
