@@ -156,6 +156,16 @@ body{
                 }
             }
 
+            ol {
+                list-style-type: decimal;
+                counter-reset: list-counter;
+            }
+            
+            ol li::marker {
+                font-weight: bold; 
+                color: $brown-800; 
+            }
+
             .ingredients-wrapper{
                 border-bottom: 1px solid $stone-150;
             }
