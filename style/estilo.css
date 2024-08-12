@@ -151,7 +151,7 @@ body main .content-wrapper .container-recipe ul {
 body main .content-wrapper .container-recipe ul li {
   font-size: 1.6rem;
   font-family: "Outfit";
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0;
   font-weight: regular;
   color: #5F564D;
@@ -169,7 +169,7 @@ body main .content-wrapper ul, body main .content-wrapper ol {
 body main .content-wrapper ul li, body main .content-wrapper ol li {
   font-size: 1.6rem;
   font-family: "Outfit";
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0;
   font-weight: regular;
   color: #5F564D;
