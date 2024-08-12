@@ -133,10 +133,11 @@ body{
                 }
                 ul{
                     margin: 0;
-                    padding-left: 3rem;
+                    padding-left: 2rem;
                     li{
-                        @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+                        @include text-style(1.6rem, "Outfit", 100%, 0, regular);
                         color: $stone-600;
+                        padding-left: 1rem;
                     }
                     .bold-text{
                         font-weight: bold;
@@ -149,9 +150,9 @@ body{
                 margin-bottom: 3.2rem;
                 padding-left: 2rem;
                 li{
-                    @include text-style(1.6rem, "Outfit", 150%, 0, regular);
+                    @include text-style(1.6rem, "Outfit", 100%, 0, regular);
                     color: $stone-600;
-                    padding-left: 2rem;
+                    padding-left: 1rem;
                 }
             }
 

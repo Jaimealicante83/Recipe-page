@@ -146,15 +146,16 @@ body main .content-wrapper .container-recipe h2 {
 }
 body main .content-wrapper .container-recipe ul {
   margin: 0;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 body main .content-wrapper .container-recipe ul li {
   font-size: 1.6rem;
   font-family: "Outfit";
-  line-height: 150%;
+  line-height: 100%;
   letter-spacing: 0;
   font-weight: regular;
   color: #5F564D;
+  padding-left: 1rem;
 }
 body main .content-wrapper .container-recipe ul .bold-text {
   font-weight: bold;
@@ -168,11 +169,11 @@ body main .content-wrapper ul, body main .content-wrapper ol {
 body main .content-wrapper ul li, body main .content-wrapper ol li {
   font-size: 1.6rem;
   font-family: "Outfit";
-  line-height: 150%;
+  line-height: 100%;
   letter-spacing: 0;
   font-weight: regular;
   color: #5F564D;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 body main .content-wrapper .ingredients-wrapper {
   border-bottom: 1px solid #E3DDD7;
