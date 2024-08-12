@@ -114,7 +114,7 @@ body main .content-wrapper h2 {
   font-family: "Young Serif";
   line-height: 150%;
   letter-spacing: 0;
-  font-weight: bold;
+  font-weight: 400;
   color: #854632;
   margin-bottom: 2.4rem;
   margin-top: 3.2rem;
@@ -146,7 +146,7 @@ body main .content-wrapper .container-recipe h2 {
 }
 body main .content-wrapper .container-recipe ul {
   margin: 0;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 body main .content-wrapper .container-recipe ul li {
   font-size: 1.6rem;
@@ -162,8 +162,8 @@ body main .content-wrapper .container-recipe ul .bold-text {
 }
 body main .content-wrapper ul, body main .content-wrapper ol {
   margin: 0;
-  margin-bottom: 6.4rem;
-  padding-left: 3rem;
+  margin-bottom: 3.2rem;
+  padding-left: 2rem;
 }
 body main .content-wrapper ul li, body main .content-wrapper ol li {
   font-size: 1.6rem;
@@ -172,6 +172,13 @@ body main .content-wrapper ul li, body main .content-wrapper ol li {
   letter-spacing: 0;
   font-weight: regular;
   color: #5F564D;
+  padding-left: 2rem;
+}
+body main .content-wrapper .ingredients-wrapper {
+  border-bottom: 1px solid #E3DDD7;
+}
+body main .content-wrapper .instructions-wrapper {
+  border-bottom: 1px solid #E3DDD7;
 }
 body main .content-wrapper .grid-nutrition .container {
   display: grid;
@@ -199,7 +206,7 @@ body main .content-wrapper .grid-nutrition .container span {
 }
 @media screen and (min-width: 768px) {
   body main .content-wrapper .grid-nutrition .container span {
-    padding-left: 6rem;
+    padding-left: 3rem;
   }
 }
 body main .content-wrapper .grid-nutrition .container .quantity {
@@ -215,6 +222,6 @@ body main .content-wrapper .grid-nutrition .container .quantity {
 }
 @media screen and (min-width: 768px) {
   body main .content-wrapper .grid-nutrition .container .quantity {
-    padding-left: 6rem;
+    padding-left: 2rem;
   }
 }/*# sourceMappingURL=estilo.css.map */

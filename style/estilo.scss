@@ -103,7 +103,7 @@ body{
                 margin-bottom: 0;
             }
             h2{
-                @include text-style(2.8rem, "Young Serif", 150%, 0, bold);
+                @include text-style(2.8rem, "Young Serif", 150%, 0, 400);
                 color: $brown-800;
                 margin-bottom: 2.4rem;
                 margin-top: 3.2rem;
@@ -133,7 +133,7 @@ body{
                 }
                 ul{
                     margin: 0;
-                    padding-left: 2rem;
+                    padding-left: 3rem;
                     li{
                         @include text-style(1.6rem, "Outfit", 150%, 0, regular);
                         color: $stone-600;
@@ -146,12 +146,20 @@ body{
             }
             ul, ol{
                 margin: 0;
-                margin-bottom: 6.4rem;
-                padding-left: 3rem;
+                margin-bottom: 3.2rem;
+                padding-left: 2rem;
                 li{
                     @include text-style(1.6rem, "Outfit", 150%, 0, regular);
                     color: $stone-600;
+                    padding-left: 2rem;
                 }
+            }
+
+            .ingredients-wrapper{
+                border-bottom: 1px solid $stone-150;
+            }
+            .instructions-wrapper{
+                border-bottom: 1px solid $stone-150;
             }
             .grid-nutrition {
                 .container {
@@ -176,7 +184,7 @@ body{
                         color: $stone-600;
                         padding-left: 3rem;
                         @media screen and (min-width: 768px){
-                            padding-left: 6rem;
+                            padding-left: 3rem;
                         }
                     }
             
@@ -187,7 +195,7 @@ body{
                         color: $brown-800;
                         padding-left: 3rem;
                         @media screen and (min-width: 768px){
-                            padding-left: 6rem;
+                            padding-left: 2rem;
                         }
                     }
                 }
